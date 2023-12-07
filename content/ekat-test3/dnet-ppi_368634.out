@@ -1,0 +1,143 @@
+preparing computation at Thu Sep 28 08:55:44 CEST 2023 ...
+executing prediction at Thu Sep 28 08:55:44 CEST 2023 ...
+2023-09-28 08:59:19.244820: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-09-28 08:59:24.284826: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+You are using the legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This means that tokens that come after special tokens will not be properly handled. We recommend you to read the related pull request available at https://github.com/huggingface/transformers/pull/24565
+2023-09-28 08:59:45.898002: E tensorflow/compiler/xla/stream_executor/cuda/cuda_driver.cc:266] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-09-28 08:59:45.898037: I tensorflow/compiler/xla/stream_executor/cuda/cuda_diagnostics.cc:168] retrieving CUDA diagnostic information for host: node009
+2023-09-28 08:59:45.898043: I tensorflow/compiler/xla/stream_executor/cuda/cuda_diagnostics.cc:175] hostname: node009
+2023-09-28 08:59:45.898158: I tensorflow/compiler/xla/stream_executor/cuda/cuda_diagnostics.cc:199] libcuda reported version is: 525.85.12
+2023-09-28 08:59:45.898173: I tensorflow/compiler/xla/stream_executor/cuda/cuda_diagnostics.cc:203] kernel reported version is: 525.85.12
+2023-09-28 08:59:45.898178: I tensorflow/compiler/xla/stream_executor/cuda/cuda_diagnostics.cc:309] kernel version seems to match DSO: 525.85.12
+Some weights of the PyTorch model were not used when initializing the TF 2.0 model TFT5EncoderModel: ['decoder.block.3.layer.2.layer_norm.weight', 'decoder.block.2.layer.1.EncDecAttention.v.weight', 'decoder.block.2.layer.2.DenseReluDense.wi.weight', 'decoder.block.13.layer.0.SelfAttention.k.weight', 'decoder.block.12.layer.0.SelfAttention.v.weight', 'decoder.block.12.layer.2.layer_norm.weight', 'decoder.block.18.layer.0.SelfAttention.q.weight', 'decoder.block.22.layer.1.EncDecAttention.v.weight', 'decoder.block.12.layer.2.DenseReluDense.wi.weight', 'decoder.block.19.layer.2.DenseReluDense.wo.weight', 'decoder.block.21.layer.0.SelfAttention.k.weight', 'decoder.block.7.layer.1.EncDecAttention.k.weight', 'decoder.block.22.layer.0.SelfAttention.v.weight', 'decoder.block.19.layer.1.EncDecAttention.k.weight', 'decoder.block.10.layer.0.SelfAttention.v.weight', 'decoder.block.12.layer.0.SelfAttention.k.weight', 'decoder.block.1.layer.0.SelfAttention.q.weight', 'decoder.block.4.layer.1.layer_norm.weight', 'decoder.block.4.layer.0.SelfAttention.v.weight', 'decoder.block.4.layer.2.DenseReluDense.wo.weight', 'decoder.block.8.layer.1.EncDecAttention.o.weight', 'decoder.block.2.layer.0.SelfAttention.v.weight', 'decoder.block.20.layer.0.layer_norm.weight', 'decoder.block.6.layer.1.layer_norm.weight', 'decoder.block.11.layer.1.EncDecAttention.o.weight', 'decoder.block.8.layer.1.EncDecAttention.k.weight', 'decoder.block.19.layer.0.SelfAttention.o.weight', 'decoder.block.6.layer.2.layer_norm.weight', 'decoder.block.21.layer.1.EncDecAttention.v.weight', 'decoder.block.19.layer.2.layer_norm.weight', 'decoder.block.23.layer.2.DenseReluDense.wi.weight', 'decoder.block.1.layer.1.EncDecAttention.v.weight', 'decoder.block.17.layer.0.SelfAttention.k.weight', 'decoder.block.23.layer.1.EncDecAttention.q.weight', 'decoder.block.13.layer.2.DenseReluDense.wi.weight', 'decoder.block.12.layer.0.SelfAttention.o.weight', 'decoder.block.19.layer.1.EncDecAttention.v.weight', 'decoder.block.9.layer.1.EncDecAttention.k.weight', 'decoder.block.6.layer.0.SelfAttention.q.weight', 'decoder.block.16.layer.2.DenseReluDense.wi.weight', 'decoder.block.21.layer.0.SelfAttention.o.weight', 'decoder.block.15.layer.2.DenseReluDense.wo.weight', 'decoder.block.1.layer.1.EncDecAttention.o.weight', 'decoder.block.23.layer.0.SelfAttention.o.weight', 'decoder.block.22.layer.2.DenseReluDense.wi.weight', 'decoder.block.13.layer.2.DenseReluDense.wo.weight', 'decoder.block.4.layer.0.SelfAttention.q.weight', 'decoder.block.16.layer.1.EncDecAttention.v.weight', 'decoder.block.13.layer.0.layer_norm.weight', 'decoder.block.18.layer.0.layer_norm.weight', 'decoder.block.2.layer.1.layer_norm.weight', 'decoder.block.13.layer.1.EncDecAttention.q.weight', 'decoder.block.2.layer.2.DenseReluDense.wo.weight', 'decoder.block.18.layer.0.SelfAttention.k.weight', 'decoder.block.2.layer.0.SelfAttention.q.weight', 'decoder.block.4.layer.1.EncDecAttention.v.weight', 'decoder.block.22.layer.0.SelfAttention.q.weight', 'decoder.block.11.layer.2.DenseReluDense.wo.weight', 'decoder.block.17.layer.0.SelfAttention.o.weight', 'decoder.block.19.layer.0.SelfAttention.v.weight', 'decoder.block.1.layer.2.DenseReluDense.wi.weight', 'decoder.block.9.layer.2.DenseReluDense.wi.weight', 'decoder.block.6.layer.1.EncDecAttention.q.weight', 'decoder.block.17.layer.1.EncDecAttention.q.weight', 'decoder.block.19.layer.2.DenseReluDense.wi.weight', 'decoder.block.23.layer.0.SelfAttention.v.weight', 'decoder.block.1.layer.1.EncDecAttention.k.weight', 'decoder.block.6.layer.2.DenseReluDense.wo.weight', 'decoder.block.6.layer.2.DenseReluDense.wi.weight', 'decoder.block.9.layer.2.layer_norm.weight', 'decoder.block.23.layer.0.SelfAttention.q.weight', 'decoder.block.21.layer.1.EncDecAttention.q.weight', 'decoder.block.20.layer.0.SelfAttention.v.weight', 'decoder.block.16.layer.0.SelfAttention.v.weight', 'decoder.block.3.layer.0.SelfAttention.v.weight', 'decoder.block.17.layer.0.SelfAttention.v.weight', 'decoder.block.16.layer.0.SelfAttention.k.weight', 'decoder.block.22.layer.1.EncDecAttention.q.weight', 'decoder.block.15.layer.0.SelfAttention.q.weight', 'decoder.block.22.layer.0.SelfAttention.k.weight', 'decoder.embed_tokens.weight', 'decoder.block.4.layer.0.SelfAttention.k.weight', 'decoder.block.10.layer.0.SelfAttention.q.weight', 'decoder.block.16.layer.2.layer_norm.weight', 'decoder.block.11.layer.0.SelfAttention.o.weight', 'decoder.block.17.layer.2.DenseReluDense.wo.weight', 'decoder.block.12.layer.1.EncDecAttention.k.weight', 'decoder.block.5.layer.1.EncDecAttention.q.weight', 'decoder.block.6.layer.0.SelfAttention.v.weight', 'decoder.block.4.layer.2.layer_norm.weight', 'decoder.block.0.layer.2.DenseReluDense.wo.weight', 'decoder.block.13.layer.2.layer_norm.weight', 'decoder.block.2.layer.0.SelfAttention.k.weight', 'decoder.block.3.layer.1.EncDecAttention.k.weight', 'decoder.block.6.layer.1.EncDecAttention.k.weight', 'decoder.block.16.layer.0.SelfAttention.q.weight', 'decoder.block.23.layer.1.EncDecAttention.o.weight', 'decoder.block.16.layer.2.DenseReluDense.wo.weight', 'decoder.block.2.layer.1.EncDecAttention.o.weight', 'decoder.block.7.layer.1.EncDecAttention.q.weight', 'decoder.block.11.layer.1.EncDecAttention.q.weight', 'decoder.block.0.layer.0.SelfAttention.v.weight', 'decoder.block.14.layer.0.layer_norm.weight', 'decoder.block.20.layer.0.SelfAttention.o.weight', 'decoder.block.15.layer.1.EncDecAttention.o.weight', 'decoder.block.23.layer.1.layer_norm.weight', 'decoder.block.1.layer.0.SelfAttention.o.weight', 'decoder.block.22.layer.1.EncDecAttention.o.weight', 'decoder.block.14.layer.1.EncDecAttention.q.weight', 'decoder.block.21.layer.0.SelfAttention.q.weight', 'decoder.block.9.layer.0.SelfAttention.k.weight', 'decoder.block.21.layer.0.SelfAttention.v.weight', 'decoder.block.8.layer.0.layer_norm.weight', 'decoder.block.6.layer.1.EncDecAttention.o.weight', 'decoder.block.17.layer.1.EncDecAttention.v.weight', 'decoder.block.3.layer.0.SelfAttention.o.weight', 'decoder.block.14.layer.0.SelfAttention.k.weight', 'decoder.block.18.layer.1.EncDecAttention.v.weight', 'decoder.block.8.layer.2.DenseReluDense.wo.weight', 'decoder.block.0.layer.1.layer_norm.weight', 'decoder.block.8.layer.0.SelfAttention.o.weight', 'decoder.block.10.layer.0.SelfAttention.o.weight', 'decoder.block.7.layer.2.layer_norm.weight', 'decoder.block.23.layer.1.EncDecAttention.k.weight', 'decoder.block.21.layer.1.EncDecAttention.o.weight', 'decoder.block.5.layer.0.SelfAttention.k.weight', 'decoder.block.10.layer.1.EncDecAttention.v.weight', 'decoder.block.7.layer.1.layer_norm.weight', 'decoder.block.17.layer.1.layer_norm.weight', 'decoder.block.17.layer.1.EncDecAttention.o.weight', 'decoder.block.7.layer.0.SelfAttention.o.weight', 'decoder.block.5.layer.0.SelfAttention.o.weight', 'decoder.block.10.layer.1.EncDecAttention.q.weight', 'decoder.block.13.layer.1.EncDecAttention.k.weight', 'decoder.block.12.layer.1.layer_norm.weight', 'decoder.block.5.layer.1.layer_norm.weight', 'decoder.block.21.layer.2.DenseReluDense.wi.weight', 'decoder.block.8.layer.0.SelfAttention.k.weight', 'decoder.block.11.layer.0.layer_norm.weight', 'decoder.block.18.layer.1.EncDecAttention.q.weight', 'decoder.block.3.layer.2.DenseReluDense.wi.weight', 'decoder.block.20.layer.1.layer_norm.weight', 'decoder.block.10.layer.0.layer_norm.weight', 'decoder.block.3.layer.1.layer_norm.weight', 'decoder.block.13.layer.0.SelfAttention.o.weight', 'decoder.block.17.layer.1.EncDecAttention.k.weight', 'decoder.block.19.layer.0.SelfAttention.q.weight', 'decoder.block.17.layer.2.layer_norm.weight', 'decoder.block.11.layer.1.EncDecAttention.k.weight', 'decoder.block.2.layer.1.EncDecAttention.k.weight', 'decoder.block.13.layer.0.SelfAttention.v.weight', 'decoder.block.11.layer.0.SelfAttention.v.weight', 'decoder.final_layer_norm.weight', 'decoder.block.7.layer.0.SelfAttention.v.weight', 'decoder.block.0.layer.1.EncDecAttention.v.weight', 'decoder.block.19.layer.0.layer_norm.weight', 'decoder.block.14.layer.2.DenseReluDense.wi.weight', 'decoder.block.14.layer.0.SelfAttention.v.weight', 'decoder.block.23.layer.0.SelfAttention.k.weight', 'decoder.block.0.layer.2.layer_norm.weight', 'decoder.block.19.layer.1.EncDecAttention.o.weight', 'encoder.embed_tokens.weight', 'decoder.block.20.layer.1.EncDecAttention.k.weight', 'decoder.block.20.layer.1.EncDecAttention.o.weight', 'decoder.block.21.layer.2.layer_norm.weight', 'decoder.block.14.layer.2.DenseReluDense.wo.weight', 'decoder.block.19.layer.1.layer_norm.weight', 'decoder.block.15.layer.2.DenseReluDense.wi.weight', 'decoder.block.3.layer.1.EncDecAttention.o.weight', 'decoder.block.14.layer.1.layer_norm.weight', 'decoder.block.10.layer.2.layer_norm.weight', 'decoder.block.0.layer.0.layer_norm.weight', 'decoder.block.4.layer.0.layer_norm.weight', 'decoder.block.14.layer.1.EncDecAttention.v.weight', 'decoder.block.9.layer.1.layer_norm.weight', 'decoder.block.23.layer.0.layer_norm.weight', 'decoder.block.9.layer.1.EncDecAttention.q.weight', 'decoder.block.20.layer.2.DenseReluDense.wo.weight', 'decoder.block.8.layer.1.layer_norm.weight', 'decoder.block.21.layer.1.EncDecAttention.k.weight', 'decoder.block.5.layer.2.layer_norm.weight', 'decoder.block.0.layer.2.DenseReluDense.wi.weight', 'decoder.block.5.layer.1.EncDecAttention.k.weight', 'decoder.block.15.layer.1.EncDecAttention.v.weight', 'decoder.block.8.layer.1.EncDecAttention.q.weight', 'decoder.block.3.layer.0.layer_norm.weight', 'decoder.block.12.layer.1.EncDecAttention.q.weight', 'decoder.block.12.layer.0.SelfAttention.q.weight', 'decoder.block.16.layer.0.SelfAttention.o.weight', 'decoder.block.5.layer.2.DenseReluDense.wo.weight', 'decoder.block.13.layer.1.layer_norm.weight', 'decoder.block.9.layer.2.DenseReluDense.wo.weight', 'decoder.block.14.layer.0.SelfAttention.o.weight', 'decoder.block.1.layer.2.layer_norm.weight', 'decoder.block.0.layer.0.SelfAttention.relative_attention_bias.weight', 'decoder.block.4.layer.2.DenseReluDense.wi.weight', 'decoder.block.5.layer.0.layer_norm.weight', 'decoder.block.11.layer.2.DenseReluDense.wi.weight', 'decoder.block.0.layer.0.SelfAttention.q.weight', 'decoder.block.3.layer.2.DenseReluDense.wo.weight', 'decoder.block.14.layer.1.EncDecAttention.k.weight', 'decoder.block.12.layer.1.EncDecAttention.o.weight', 'decoder.block.7.layer.0.SelfAttention.k.weight', 'decoder.block.16.layer.1.EncDecAttention.k.weight', 'decoder.block.7.layer.0.layer_norm.weight', 'decoder.block.9.layer.0.layer_norm.weight', 'decoder.block.16.layer.1.EncDecAttention.q.weight', 'decoder.block.11.layer.1.EncDecAttention.v.weight', 'decoder.block.15.layer.1.layer_norm.weight', 'decoder.block.10.layer.2.DenseReluDense.wi.weight', 'decoder.block.1.layer.0.SelfAttention.v.weight', 'decoder.block.11.layer.0.SelfAttention.q.weight', 'decoder.block.16.layer.1.layer_norm.weight', 'decoder.block.18.layer.2.DenseReluDense.wi.weight', 'decoder.block.6.layer.0.SelfAttention.k.weight', 'decoder.block.10.layer.0.SelfAttention.k.weight', 'decoder.block.8.layer.1.EncDecAttention.v.weight', 'decoder.block.18.layer.1.EncDecAttention.o.weight', 'decoder.block.4.layer.1.EncDecAttention.q.weight', 'decoder.block.20.layer.2.DenseReluDense.wi.weight', 'decoder.block.8.layer.0.SelfAttention.q.weight', 'decoder.block.15.layer.1.EncDecAttention.q.weight', 'decoder.block.21.layer.2.DenseReluDense.wo.weight', 'decoder.block.17.layer.0.layer_norm.weight', 'decoder.block.14.layer.1.EncDecAttention.o.weight', 'decoder.block.6.layer.0.layer_norm.weight', 'decoder.block.18.layer.1.EncDecAttention.k.weight', 'decoder.block.9.layer.0.SelfAttention.v.weight', 'decoder.block.15.layer.0.layer_norm.weight', 'decoder.block.23.layer.2.layer_norm.weight', 'decoder.block.17.layer.0.SelfAttention.q.weight', 'decoder.block.14.layer.2.layer_norm.weight', 'decoder.block.22.layer.0.layer_norm.weight', 'decoder.block.20.layer.0.SelfAttention.q.weight', 'decoder.block.2.layer.2.layer_norm.weight', 'decoder.block.18.layer.1.layer_norm.weight', 'decoder.block.11.layer.1.layer_norm.weight', 'decoder.block.5.layer.1.EncDecAttention.o.weight', 'decoder.block.10.layer.1.EncDecAttention.o.weight', 'decoder.block.21.layer.1.layer_norm.weight', 'decoder.block.6.layer.1.EncDecAttention.v.weight', 'decoder.block.5.layer.0.SelfAttention.q.weight', 'decoder.block.22.layer.1.layer_norm.weight', 'decoder.block.18.layer.0.SelfAttention.v.weight', 'decoder.block.22.layer.2.DenseReluDense.wo.weight', 'decoder.block.1.layer.1.EncDecAttention.q.weight', 'decoder.block.7.layer.2.DenseReluDense.wi.weight', 'decoder.block.15.layer.2.layer_norm.weight', 'decoder.block.9.layer.0.SelfAttention.o.weight', 'decoder.block.5.layer.2.DenseReluDense.wi.weight', 'decoder.block.4.layer.0.SelfAttention.o.weight', 'decoder.block.3.layer.0.SelfAttention.q.weight', 'decoder.block.9.layer.1.EncDecAttention.o.weight', 'decoder.block.16.layer.1.EncDecAttention.o.weight', 'decoder.block.7.layer.0.SelfAttention.q.weight', 'decoder.block.13.layer.1.EncDecAttention.o.weight', 'decoder.block.1.layer.2.DenseReluDense.wo.weight', 'decoder.block.23.layer.1.EncDecAttention.v.weight', 'decoder.block.12.layer.2.DenseReluDense.wo.weight', 'decoder.block.3.layer.0.SelfAttention.k.weight', 'decoder.block.5.layer.0.SelfAttention.v.weight', 'decoder.block.9.layer.0.SelfAttention.q.weight', 'decoder.block.0.layer.1.EncDecAttention.k.weight', 'decoder.block.3.layer.1.EncDecAttention.v.weight', 'decoder.block.18.layer.2.DenseReluDense.wo.weight', 'decoder.block.6.layer.0.SelfAttention.o.weight', 'decoder.block.18.layer.2.layer_norm.weight', 'decoder.block.1.layer.0.layer_norm.weight', 'lm_head.weight', 'decoder.block.0.layer.1.EncDecAttention.o.weight', 'decoder.block.20.layer.0.SelfAttention.k.weight', 'decoder.block.22.layer.1.EncDecAttention.k.weight', 'decoder.block.15.layer.0.SelfAttention.k.weight', 'decoder.block.15.layer.1.EncDecAttention.k.weight', 'decoder.block.11.layer.0.SelfAttention.k.weight', 'decoder.block.7.layer.2.DenseReluDense.wo.weight', 'decoder.block.7.layer.1.EncDecAttention.v.weight', 'decoder.block.0.layer.1.EncDecAttention.q.weight', 'decoder.block.9.layer.1.EncDecAttention.v.weight', 'decoder.block.12.layer.1.EncDecAttention.v.weight', 'decoder.block.20.layer.2.layer_norm.weight', 'decoder.block.4.layer.1.EncDecAttention.o.weight', 'decoder.block.14.layer.0.SelfAttention.q.weight', 'decoder.block.5.layer.1.EncDecAttention.v.weight', 'decoder.block.1.layer.1.layer_norm.weight', 'decoder.block.0.layer.0.SelfAttention.k.weight', 'decoder.block.17.layer.2.DenseReluDense.wi.weight', 'decoder.block.23.layer.2.DenseReluDense.wo.weight', 'decoder.block.8.layer.2.DenseReluDense.wi.weight', 'decoder.block.15.layer.0.SelfAttention.o.weight', 'decoder.block.2.layer.0.layer_norm.weight', 'decoder.block.7.layer.1.EncDecAttention.o.weight', 'decoder.block.20.layer.1.EncDecAttention.q.weight', 'decoder.block.19.layer.0.SelfAttention.k.weight', 'decoder.block.3.layer.1.EncDecAttention.q.weight', 'decoder.block.18.layer.0.SelfAttention.o.weight', 'decoder.block.22.layer.2.layer_norm.weight', 'decoder.block.2.layer.1.EncDecAttention.q.weight', 'decoder.block.10.layer.1.EncDecAttention.k.weight', 'decoder.block.11.layer.2.layer_norm.weight', 'decoder.block.10.layer.1.layer_norm.weight', 'decoder.block.16.layer.0.layer_norm.weight', 'decoder.block.8.layer.2.layer_norm.weight', 'decoder.block.19.layer.1.EncDecAttention.q.weight', 'decoder.block.20.layer.1.EncDecAttention.v.weight', 'decoder.block.21.layer.0.layer_norm.weight', 'decoder.block.10.layer.2.DenseReluDense.wo.weight', 'decoder.block.8.layer.0.SelfAttention.v.weight', 'decoder.block.1.layer.0.SelfAttention.k.weight', 'decoder.block.12.layer.0.layer_norm.weight', 'decoder.block.13.layer.1.EncDecAttention.v.weight', 'decoder.block.22.layer.0.SelfAttention.o.weight', 'decoder.block.2.layer.0.SelfAttention.o.weight', 'decoder.block.0.layer.0.SelfAttention.o.weight', 'decoder.block.13.layer.0.SelfAttention.q.weight', 'decoder.block.15.layer.0.SelfAttention.v.weight', 'decoder.block.4.layer.1.EncDecAttention.k.weight']
+- This IS expected if you are initializing TFT5EncoderModel from a PyTorch model trained on another task or with another architecture (e.g. initializing a TFBertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing TFT5EncoderModel from a PyTorch model that you expect to be exactly identical (e.g. initializing a TFBertForSequenceClassification model from a BertForSequenceClassification model).
+All the weights of TFT5EncoderModel were initialized from the PyTorch model.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use TFT5EncoderModel for predictions without further training.
+USER_INPUT_FASTA_FILE: ./user_input.fasta  | PREPARED_USERDS_FILE:  ./prepared_userds.csv
+Parsing user input file ...
+Making dataframe for user input ...
+Generating PIPENN file for user input ...
+
+## Generating Protbert file for @@:  ./prepared_userds.csv  @@
+%%%%%%%%%%% modelDir:  ../data/protbert
+prot-id:  P46938  | emb-shape:  (488, 1024)
+prot-id:  P00523  | emb-shape:  (533, 1024)
+prot-id:  Q60770  | emb-shape:  (592, 1024)
+prot-id:  O15143  | emb-shape:  (372, 1024)
+prot-id:  Q16613  | emb-shape:  (207, 1024)
+prot-id:  Q02248  | emb-shape:  (781, 1024)
+prot-id:  Q9Y613  | emb-shape:  (1164, 1024)
+prot-id:  Q13232  | emb-shape:  (169, 1024)
+prot-id:  P01108  | emb-shape:  (454, 1024)
+prot-id:  Q5RJI5  | emb-shape:  (778, 1024)
+prot-id:  P81122  | emb-shape:  (1321, 1024)
+prot-id:  P27870  | emb-shape:  (845, 1024)
+prot-id:  O14744  | emb-shape:  (637, 1024)
+prot-id:  O00206  | emb-shape:  (839, 1024)
+prot-id:  Q06830  | emb-shape:  (199, 1024)
+prot-id:  P13405  | emb-shape:  (921, 1024)
+prot-id:  P35546  | emb-shape:  (1115, 1024)
+prot-id:  P30999  | emb-shape:  (938, 1024)
+prot-id:  Q01279  | emb-shape:  (1210, 1024)
+prot-id:  Q00560  | emb-shape:  (917, 1024)
+prot-id:  P05480  | emb-shape:  (535, 1024)
+prot-id:  P25445  | emb-shape:  (335, 1024)
+prot-id:  P35235  | emb-shape:  (593, 1024)
+prot-id:  Q9WVG6  | emb-shape:  (608, 1024)
+prot-id:  P05622  | emb-shape:  (1098, 1024)
+prot-id:  Q64010  | emb-shape:  (304, 1024)
+prot-id:  O43586  | emb-shape:  (416, 1024)
+prot-id:  P08833  | emb-shape:  (259, 1024)
+prot-id:  P46460  | emb-shape:  (744, 1024)
+prot-id:  Q8VDS3  | emb-shape:  (158, 1024)
+prot-id:  P07766  | emb-shape:  (207, 1024)
+prot-id:  P00439  | emb-shape:  (452, 1024)
+prot-id:  P09327  | emb-shape:  (827, 1024)
+prot-id:  Q9Z1X4  | emb-shape:  (898, 1024)
+prot-id:  O15084  | emb-shape:  (1053, 1024)
+prot-id:  O54890  | emb-shape:  (787, 1024)
+prot-id:  Q7L0Q8  | emb-shape:  (258, 1024)
+prot-id:  Q9WTK7  | emb-shape:  (436, 1024)
+prot-id:  Q13418  | emb-shape:  (452, 1024)
+prot-id:  P09803  | emb-shape:  (884, 1024)
+prot-id:  P25206  | emb-shape:  (812, 1024)
+prot-id:  Q92673  | emb-shape:  (2214, 1024)
+prot-id:  P09581  | emb-shape:  (977, 1024)
+prot-id:  Q00944  | emb-shape:  (1053, 1024)
+prot-id:  Q16539  | emb-shape:  (360, 1024)
+prot-id:  P48025  | emb-shape:  (629, 1024)
+prot-id:  O09044  | emb-shape:  (210, 1024)
+prot-id:  Q91ZM9  | emb-shape:  (306, 1024)
+prot-id:  P00523  | emb-shape:  (533, 1024)
+prot-id:  P49137  | emb-shape:  (400, 1024)
+prot-id:  Q60631  | emb-shape:  (217, 1024)
+prot-id:  Q9D3G5  | emb-shape:  (287, 1024)
+prot-id:  Q02248  | emb-shape:  (781, 1024)
+prot-id:  Q9Y613  | emb-shape:  (1164, 1024)
+prot-id:  Q62077  | emb-shape:  (1302, 1024)
+prot-id:  Q9CXY6  | emb-shape:  (390, 1024)
+prot-id:  Q9CQJ4  | emb-shape:  (336, 1024)
+prot-id:  P14234  | emb-shape:  (517, 1024)
+prot-id:  Q5RJI5  | emb-shape:  (778, 1024)
+prot-id:  P28574  | emb-shape:  (160, 1024)
+prot-id:  P27870  | emb-shape:  (845, 1024)
+prot-id:  O14744  | emb-shape:  (637, 1024)
+prot-id:  P49718  | emb-shape:  (734, 1024)
+prot-id:  O00206  | emb-shape:  (839, 1024)
+prot-id:  Q13951  | emb-shape:  (182, 1024)
+prot-id:  P26231  | emb-shape:  (906, 1024)
+prot-id:  O35718  | emb-shape:  (225, 1024)
+prot-id:  P30051  | emb-shape:  (426, 1024)
+prot-id:  P05019  | emb-shape:  (195, 1024)
+prot-id:  Q06830  | emb-shape:  (199, 1024)
+prot-id:  P13612  | emb-shape:  (1032, 1024)
+prot-id:  Q01279  | emb-shape:  (1210, 1024)
+prot-id:  P05480  | emb-shape:  (535, 1024)
+prot-id:  Q16667  | emb-shape:  (212, 1024)
+prot-id:  Q14186  | emb-shape:  (410, 1024)
+prot-id:  O70469  | emb-shape:  (412, 1024)
+prot-id:  Q9WVG6  | emb-shape:  (608, 1024)
+prot-id:  Q16512  | emb-shape:  (942, 1024)
+prot-id:  P20248  | emb-shape:  (432, 1024)
+prot-id:  Q64010  | emb-shape:  (304, 1024)
+prot-id:  P15208  | emb-shape:  (1372, 1024)
+prot-id:  P98083  | emb-shape:  (579, 1024)
+prot-id:  O43586  | emb-shape:  (416, 1024)
+prot-id:  P07947  | emb-shape:  (543, 1024)
+prot-id:  P46460  | emb-shape:  (744, 1024)
+prot-id:  P00439  | emb-shape:  (452, 1024)
+prot-id:  P97310  | emb-shape:  (904, 1024)
+prot-id:  Q61881  | emb-shape:  (719, 1024)
+prot-id:  Q99KE3  | emb-shape:  (325, 1024)
+prot-id:  P70452  | emb-shape:  (298, 1024)
+prot-id:  Q9UIC8  | emb-shape:  (334, 1024)
+prot-id:  P09803  | emb-shape:  (884, 1024)
+prot-id:  P41239  | emb-shape:  (450, 1024)
+prot-id:  Q61501  | emb-shape:  (430, 1024)
+prot-id:  P15531  | emb-shape:  (152, 1024)
+prot-id:  P97465  | emb-shape:  (482, 1024)
+prot-id:  P01133  | emb-shape:  (1207, 1024)
+
+## ProtBert file generated @@:  prepared_userds.npz  @@
+2023-09-28 09:08:56.602245: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-09-28 09:08:57.562058: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-09-28 09:09:00.936247: E tensorflow/compiler/xla/stream_executor/cuda/cuda_driver.cc:266] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-09-28 09:09:00.936287: I tensorflow/compiler/xla/stream_executor/cuda/cuda_diagnostics.cc:168] retrieving CUDA diagnostic information for host: node009
+2023-09-28 09:09:00.936292: I tensorflow/compiler/xla/stream_executor/cuda/cuda_diagnostics.cc:175] hostname: node009
+2023-09-28 09:09:00.936407: I tensorflow/compiler/xla/stream_executor/cuda/cuda_diagnostics.cc:199] libcuda reported version is: 525.85.12
+2023-09-28 09:09:00.936422: I tensorflow/compiler/xla/stream_executor/cuda/cuda_diagnostics.cc:203] kernel reported version is: 525.85.12
+2023-09-28 09:09:00.936426: I tensorflow/compiler/xla/stream_executor/cuda/cuda_diagnostics.cc:309] kernel version seems to match DSO: 525.85.12
+$$$$$$ Please install GPU version of TF
+%%%%%%%%% datasetLabel:  UserDS_P
+%%%%%%%%% PIPENN_HOME:  /scistor/informatica/rhu300/pipenn-exp/
+## Testing ./prepared_userds.csv at: 28-09-2023#09:09:05 ##
+Shape featuresTable: (97, 2) | Shape labelvec: (97, 1)
+Shape inputData: (104, 1170, 1025)
+Shape labelData: (104, 1170, 1)
+Testing time: 0:00:02.722158
+
+## Generating pred-data for @@: ./dnet-ppi/preds-UserDS_P.csv @@
+## Prediction plot generated for: ./dnet-ppi/PPLOTS_preds-UserDS_P.html
