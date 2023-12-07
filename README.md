@@ -6,5 +6,6 @@ Post-translational modifications (PTMs) can considerably alter the structural or
 
 Few notes for the user:
 
--repository contains compressed npz files with ProtBERT predictions, it is advised to decompress them manually, or modify the corresponding code.
+- code refrences protBERT emneddings in a npz files, however, they were too big to be attached, unfortunately
+
 -the code for filtering procedure is not presented, somehow the author performed it using Ubuntu command line, but the exact prompt got lost. Endlessly sorry for this, on the good side though - the filtered dataset is presented in the content folder.
